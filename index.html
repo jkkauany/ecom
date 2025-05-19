@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EcoMapa - Problemas Urbanos</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>EcoMapa 🌍</h1>
+    <p>Farol de Notícias sobre Problemas Urbanos</p>
+  </header>
+
+  <main>
+    <section class="report">
+      <h2>Buraco em Avenida Principal</h2>
+      <p>Moradores relatam buraco perigoso na Av. Central, causando acidentes e engarrafamentos.</p>
+    </section>
+
+    <section class="report">
+      <h2>Lixo Acumulado em Praça</h2>
+      <p>Acúmulo de lixo na Praça Verde tem preocupado moradores e atraído animais.</p>
+    </section>
+
+    <section class="comments">
+      <h3>Deixe seu comentário</h3>
+      <form onsubmit="adicionarComentario(event)">
+        <input type="text" id="nome" placeholder="Seu nome" required />
+        <textarea id="mensagem" placeholder="Sua mensagem..." required></textarea>
+        <button type="submit">Comentar</button>
+      </form>
+
+      <div id="comentarios">
+        <!-- Comentários inseridos via JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 EcoMapa - Criado para conectar cidadãos e transformar cidades.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
